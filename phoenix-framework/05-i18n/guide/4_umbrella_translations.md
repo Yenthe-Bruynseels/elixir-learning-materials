@@ -111,7 +111,7 @@ Add the `gettext` dependency to your project (`i18n_translations`) dependencies 
   end
 ```
 
-Create a `Gettext` module that will have the necessare code injected functions.
+Create a `Gettext` module that will have the necessary code injected functions.
 
 ```elixir
 defmodule I18nTranslations.Gettext do

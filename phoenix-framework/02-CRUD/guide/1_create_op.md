@@ -14,7 +14,7 @@ First we'll make a schema and migration. Let's make an example of a stereotypica
 mix phx.gen.schema UserContext.User users first_name:string last_name:string date_of_birth:date
 ```
 
-Our users needs to be unique, so let us also make an unique index on the date of birth, first and last name to ensure data integrity. We don't need the auto-generated timestamps so delete those. Your migration file should now look similar to this:
+Our users needs to be unique, so let us also make a unique index on the date of birth, first and last name to ensure data integrity. We don't need the auto-generated timestamps so delete those. Your migration file should now look similar to this:
 
 ```elixir
 defmodule UserDemo.Repo.Migrations.CreateUsers do
@@ -35,7 +35,7 @@ end
 ```
 A schema is a representation of a data structure and what associated fields match with the database.
 
-When an unique index conflic occurs, this would raise an error our system doesn't know about. That's why we have to specify this unique constraint in our schema as well.
+When a unique index conflic occurs, this would raise an error our system doesn't know about. That's why we have to specify this unique constraint in our schema as well.
 ```elixir
 defmodule UserDemo.UserContext.User do
   use Ecto.Schema

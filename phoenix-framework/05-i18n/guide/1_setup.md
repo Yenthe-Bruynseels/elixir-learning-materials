@@ -41,7 +41,7 @@ defmodule I18nWeb.PageController do
 end
 ```
 
-The route points toward a controller having 2 functions. A function 'index' and a function 'another_index'. Make sure the controller and the appropiate functions are present. As you can see the index/2 function is already present.
+The route points toward a controller having 2 functions. A function 'index' and a function 'another_index'. Make sure the controller and the appropriate functions are present. As you can see the index/2 function is already present.
 
 ```html
 <!-- templates/layout/app.html.eex -->
